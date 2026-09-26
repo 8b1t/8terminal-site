@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8Terminal — SSH client with no account</title>
+  <meta name="description" content="8Terminal is an SSH client for Mac, iPhone and iPad with SFTP, port forwarding and an encrypted local vault. No account, no server of ours.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">8</span>8Terminal</a>
+    <nav class="site" aria-label="Site">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">SSH · SFTP · Tunnels</p>
+      <h1>An SSH client that needs no account.</h1>
+      <p class="lede">Hosts, terminal, SFTP and port forwarding for Mac, iPhone and iPad. Everything you save lives in an encrypted vault on your own device. There is nothing to sign up for and no server of ours in between.</p>
+      <div class="actions">
+        <a class="button" href="https://apps.apple.com/app/id6802427379">Get it on the App Store</a>
+        <a class="button secondary" href="support.html">Questions</a>
+      </div>
+    </div>
+    <pre class="terminal" aria-label="An example session"><span class="dim">$</span> ssh deploy@build-box
+<span class="dim">Unknown host key. Compare before trusting:</span>
+<span class="dim">  ED25519  SHA256:q3Fh…T8</span>  <span class="ok">Trust and save</span>
+<span class="dim">Sign in with this Mac's key (Touch ID)</span>
+deploy@build-box:~$ tmux new -A -s main
+<span class="ok">● attached</span> <span class="dim">main · 3 windows</span></pre>
+  </section>
+
+  <ul class="facts" aria-label="At a glance">
+    <li>No account</li>
+    <li>Argon2id + XChaCha20-Poly1305 vault</li>
+    <li>Post-quantum key exchange</li>
+    <li>Pro $5.99 once, every device</li>
+  </ul>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div>
+      <h3>Terminal</h3>
+      <ul>
+        <li>Tabs and split panes on the Mac</li>
+        <li>Reconnects and reattaches tmux or zellij</li>
+        <li>A notification when a coding agent waits for you</li>
+        <li>Paste a screenshot or file; its path lands at the prompt</li>
+        <li>Themes, a theme per host, Nerd Font symbols</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Keys and sign-in</h3>
+      <ul>
+        <li>Passwords, Ed25519, ECDSA and RSA keys, two-factor prompts</li>
+        <li>SSH agent and Secure Enclave keys on the Mac</li>
+        <li>OpenSSH certificates from your CA</li>
+        <li>Agent forwarding that asks before every signature</li>
+        <li>Jump host chains and per-host environment</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Files and tunnels</h3>
+      <ul>
+        <li>SFTP over the session you already opened</li>
+        <li>Folders, permissions, drag in from Finder</li>
+        <li>Transfers that resume after a dropped connection</li>
+        <li>Local, remote and SOCKS5 forwarding</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Your vault</h3>
+      <ul>
+        <li>Unlock with Touch ID, Face ID or your master password</li>
+        <li>Several vaults; encrypted backup to your own iCloud Drive or Google Drive — free</li>
+        <li>Import from Termius, MobaXterm, PuTTY, Tabby and OpenSSH config</li>
+        <li>Readable JSON export without secrets</li>
+      </ul>
+    </div>
+    <div>
+      <h3>iPhone and iPad</h3>
+      <ul>
+        <li>A key row for Esc, Ctrl, Alt, arrows and F-keys</li>
+        <li>Live Activity with Return, Ctrl-C and Reconnect</li>
+        <li>Home Screen widget and Shortcuts</li>
+        <li>Hardware keyboard shortcuts on iPad</li>
+      </ul>
+    </div>
+    <div>
+      <h3>AI that asks first</h3>
+      <ul>
+        <li>Bring your own provider key; it stays in the vault</li>
+        <li>You choose what it reads</li>
+        <li>A suggested command runs only after you approve it, once</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="pro" aria-labelledby="pro-title">
+    <p class="eyebrow">8Terminal Pro</p>
+    <h2 id="pro-title">Sync between your devices — <span class="price">$5.99 once</span></h2>
+    <p>End-to-end encrypted vault sync between your Macs, iPhone and iPad, through your own cloud, and linking a new device with a verification code. One purchase covers every device on your Apple Account, and your Family Sharing group. No subscription.</p>
+    <p>Everything else in 8Terminal is free, on every device, with no time limit.</p>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>8Terminal · Milos Vesic</span>
+    <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="changelog.html">Changelog</a></span>
+  </div>
+</footer>
+</body>
+</html>

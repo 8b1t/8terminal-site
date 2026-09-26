@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8Terminal — Privacy Policy</title>
+  <meta name="description" content="How 8Terminal handles your information: no account, no analytics, an encrypted vault on your device.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">8</span>8Terminal</a>
+    <nav class="site" aria-label="Site">
+      <a href="index.html">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <p class="eyebrow" style="margin-top:48px">Privacy policy</p>
+  <h1>8Terminal — Privacy Policy</h1>
+  <p><strong>Last updated: 18 August 2026</strong></p>
+  <p>8Terminal is an SSH client and encrypted vault for macOS, iPadOS and iOS, published by Milos Vesic.</p>
+  <p>This policy describes every way the app handles your information. It is short because the app is built to need very little.</p>
+
+  <h2>The short version</h2>
+  <p>8Terminal has no user account and no server of ours. Your hosts, credentials, private keys and known-host records are stored in an encrypted database on your own device. We cannot read them, and we never receive them.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing, unless you turn on crash reporting.</strong></p>
+  <p>The app has one optional data flow, which is <strong>off until you switch it on</strong> in Diagnostics → "Share crash reports automatically":</p>
+  <ul>
+    <li><strong>Crash data.</strong> If the app crashes while you have this enabled, an anonymized crash signature is sent to our error-reporting provider (Sentry): a stack trace, the app version, and the operating system and hardware family reported by the system.</li>
+    <li>The report is stripped before it leaves your device. It never contains hostnames, usernames, terminal output, file paths, passwords, private keys, or anything from your vault. Crash messages, which can quote arbitrary text, are removed as well.</li>
+    <li>This data is not linked to your identity, is not used to track you, and is used only to find and fix defects.</li>
+    <li>You can turn it off at any time in the same place, and nothing further is sent.</li>
+  </ul>
+  <p>We collect no analytics, no usage statistics, no advertising identifiers, and no contact information. We do not use third-party trackers.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li><strong>Hosts, credentials, private keys, known hosts, snippets and settings</strong> live in an encrypted vault on your device, unlocked with your master password or biometric device unlock.</li>
+    <li><strong>Vault backups</strong> you create are ordinary files. Where you put them is your choice.</li>
+    <li><strong>Terminal output</strong> is never recorded or transmitted by the app.</li>
+  </ul>
+
+  <h2>Optional services you choose to connect</h2>
+  <p>Some features connect to third parties <strong>only when you set them up</strong>:</p>
+  <ul>
+    <li><strong>Vault sync between your own devices (Pro).</strong> Your vault is encrypted end-to-end on your devices before it is stored or transferred. The storage provider you choose (for example your own Google Drive or iCloud) holds only encrypted data it cannot read. We operate no sync server and hold no copy.</li>
+    <li><strong>Cloud backup.</strong> If you export a vault backup to a cloud folder, the file goes to your own account with that provider, under that provider's privacy policy.</li>
+    <li><strong>AI assistant.</strong> If you configure an AI provider, the text you explicitly choose to share — a selection, or the visible terminal output — is sent to that provider under their privacy policy, using your own API key or local CLI login. Passwords, private keys and vault contents are never included. Nothing is sent until you ask for it.</li>
+  </ul>
+  <p>In each case you decide whether to enable the feature, and the third party is the one you picked.</p>
+
+  <h2>Purchases</h2>
+  <p>Purchases made through the Mac App Store or App Store are processed by Apple. We receive no payment details. Apple's own privacy policy governs that transaction.</p>
+
+  <h2>Children</h2>
+  <p>8Terminal is a developer tool and is not directed at children.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Crash reporting: off by default; toggle it in Diagnostics at any time.</li>
+    <li>Vault: delete it and its backups at any time; deletion is local and immediate.</li>
+    <li>Sync: disable it, and unlink devices, from within the app.</li>
+  </ul>
+  <p>Because we hold no personal data about you, there is nothing for us to export or delete on request. If you have enabled crash reporting and want reports removed, contact us with the approximate date and we will delete matching reports from our error-reporting provider.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be published at this address with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p><strong><a href="mailto:the8terminal@gmail.com">the8terminal@gmail.com</a></strong></p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>8Terminal · Milos Vesic</span>
+    <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="changelog.html">Changelog</a></span>
+  </div>
+</footer>
+</body>
+</html>

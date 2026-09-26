@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8Terminal — Support</title>
+  <meta name="description" content="Answers to common questions about 8Terminal, and how to reach the developer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">8</span>8Terminal</a>
+    <nav class="site" aria-label="Site">
+      <a href="index.html">Overview</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <p class="eyebrow" style="margin-top:48px">Support</p>
+  <h1>Questions and answers</h1>
+  <p class="lede">8Terminal is an SSH client for macOS, iPadOS and iOS with SFTP, port forwarding and a local encrypted vault. It has no account and no server of ours.</p>
+  <p><strong>Contact: <a href="mailto:the8terminal@gmail.com">the8terminal@gmail.com</a></strong> — write in English or Serbian. Please include your macOS or iOS version and the app version (Settings → About).</p>
+
+  <dl class="faq">
+    <dt>Do I need an account?</dt>
+    <dd>No. There is nothing to sign up for. Your hosts, credentials and keys live in an encrypted vault on your own device.</dd>
+
+    <dt>I forgot my master password. Can you recover my vault?</dt>
+    <dd>No, and neither can anyone else. The vault is encrypted with a key derived from that password; we never receive it and hold no copy. Restore from a <code>.8tvault</code> backup if you have one.</dd>
+
+    <dt>What does 8Terminal Pro add?</dt>
+    <dd>End-to-end encrypted vault sync between your own devices, and device linking. It is $5.99 (€5.99, £5.99) once for every device on your Apple Account and your Family Sharing group. Everything single-device stays free: multiple vaults, encrypted cloud backup, <code>.8tvault</code> export and restore, and the AI assistant.</dd>
+
+    <dt>How do I restore a purchase on a new device?</dt>
+    <dd>Settings → Vault sync → Restore Purchases, signed in with the same Apple Account.</dd>
+
+    <dt>How do I bring my hosts over from Termius?</dt>
+    <dd>The Mac App Store build cannot read another app's data, so a separate free tool does the export. Download the <a href="https://github.com/8b1t/8terminal-termius-migrator/releases/latest">8Terminal Termius Migrator</a>, run it, save the file it produces, then in 8Terminal choose Import → 8Terminal export file.</dd>
+
+    <dt>Can I use my SSH agent, 1Password or a YubiKey on the Mac?</dt>
+    <dd>Yes, through an SSH agent. The App Store sandbox only lets 8Terminal reach an agent socket inside its own container, so Keychain → Security shows the exact path and the one-line command to start or bridge your agent there. Security keys (<code>sk-</code> keys) work through the agent too.</dd>
+
+    <dt>Is anything sent from my device?</dt>
+    <dd>Only if you turn it on. Crash reporting is off by default; when enabled, a report carries a stack trace, the app version and the OS version — never hostnames, usernames, terminal output, file paths or anything from your vault. The AI assistant sends only the text you explicitly choose to share, to the provider you configured.</dd>
+  </dl>
+
+  <p style="margin-top:32px"><a href="privacy.html">Privacy policy</a></p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>8Terminal · Milos Vesic</span>
+    <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="changelog.html">Changelog</a></span>
+  </div>
+</footer>
+</body>
+</html>
