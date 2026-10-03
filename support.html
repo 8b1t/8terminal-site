@@ -46,7 +46,10 @@
     <dd>Yes, through an SSH agent. The App Store sandbox only lets 8Terminal reach an agent socket inside its own container, so Keychain → Security shows the exact path and the one-line command to start or bridge your agent there. Security keys (<code>sk-</code> keys) work through the agent too.</dd>
 
     <dt>Is anything sent from my device?</dt>
-    <dd>Only if you turn it on. Crash reporting is off by default; when enabled, a report carries a stack trace, the app version and the OS version — never hostnames, usernames, terminal output, file paths or anything from your vault. The AI assistant sends only the text you explicitly choose to share, to the provider you configured.</dd>
+    <dd>Only if you turn it on. Crash reporting is off by default; when enabled, a report carries a stack trace, the app version and the OS version — never hostnames, usernames, terminal output, file paths or anything from your vault. The AI assistant sends only the text you explicitly choose to share, to the provider you configured. The exception is Auto mode, which you switch on yourself: it also sends the goal you give it, the read-only commands it runs and what they print.</dd>
+
+    <dt>What does Auto mode do?</dt>
+    <dd>Auto mode is a switch in the AI assistant. Off, the assistant suggests a command and you choose whether to run it. On, you give it a goal and it runs read-only checks on your Linux server by itself, without touching your terminal, and reads the results. It stops and asks before any command that changes something, and when a command asks for a password it offers your saved passwords and waits for you. You can press Stop at any time. It is off after you lock the vault or restart the app, and on iPhone and iPad a run ends when you leave the app. What the checks print is sent to your AI provider, so avoid asking it to look at files that hold secrets.</dd>
   </dl>
 
   <p style="margin-top:32px"><a href="privacy.html">Privacy policy</a></p>

@@ -23,7 +23,7 @@
 <main class="wrap prose">
   <p class="eyebrow" style="margin-top:48px">Privacy policy</p>
   <h1>8Terminal — Privacy Policy</h1>
-  <p><strong>Last updated: 18 August 2026</strong></p>
+  <p><strong>Last updated: 3 October 2026</strong></p>
   <p>8Terminal is an SSH client and encrypted vault for macOS, iPadOS and iOS, published by Milos Vesic.</p>
   <p>This policy describes every way the app handles your information. It is short because the app is built to need very little.</p>
 
@@ -53,7 +53,8 @@
   <ul>
     <li><strong>Vault sync between your own devices (Pro).</strong> Your vault is encrypted end-to-end on your devices before it is stored or transferred. The storage provider you choose (for example your own Google Drive or iCloud) holds only encrypted data it cannot read. We operate no sync server and hold no copy.</li>
     <li><strong>Cloud backup.</strong> If you export a vault backup to a cloud folder, the file goes to your own account with that provider, under that provider's privacy policy.</li>
-    <li><strong>AI assistant.</strong> If you configure an AI provider, the text you explicitly choose to share — a selection, or the visible terminal output — is sent to that provider under their privacy policy, using your own API key or local CLI login. Passwords, private keys and vault contents are never included. Nothing is sent until you ask for it.</li>
+    <li><strong>AI assistant.</strong> If you configure an AI provider, the text you explicitly choose to share — a selection, or the visible terminal output — is sent to that provider under their privacy policy, using your own API key or local CLI login. Your passwords, private keys and vault contents are never included. Nothing is sent until you ask for it, except in Auto mode.</li>
+    <li><strong>Auto mode.</strong> Auto mode is off by default, is switched on per conversation, and is off again after you lock the vault or restart the app. Before the first run on a device, 8Terminal asks you to agree. When Auto mode is on and you give it a goal, it runs read-only commands on your server by itself and sends the goal, those commands and what they print to your AI provider under their privacy policy. 8Terminal does not read files that usually hold secrets, but it cannot know everything a command prints, so a secret that appears in a log or a configuration file can be sent. Anything that changes your server still waits for your approval. We operate no server and receive none of this.</li>
   </ul>
   <p>In each case you decide whether to enable the feature, and the third party is the one you picked.</p>
 
